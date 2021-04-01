@@ -6,14 +6,15 @@
   "icons": {
     "64": "icons/icon.png"
   },
+  "permissions": ["storage"],
   "browser_action": {
     "default_icon": {
       "64": "icons/icon.png"
     },
-    "default_popup": "browserAction/index.html",
+    "default_popup": "popup.html",
     "default_title": "Mindload"
   },
   "options_ui": {
-    "page": "options/index.html"
+    "page": "options.html"
   }
 }

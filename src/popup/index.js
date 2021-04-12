@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import HelpSection from "./components/HelpSection";
+import HelpSection from './components/HelpSection';
 
 import './index.css';
 

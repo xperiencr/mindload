@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import Note from "./components/Note";
+import Toast from "./components/Toast";
 
 import "./index.css";
 
 function Popup() {
+  const [isSuccess, setIsSuccess] = useState(false);
+
   return (
     <div className="Popup">
-      <Note content="Esto es una nota" isUrgent={false} onRemove={alert} />
+      <button type="button" onClick={() => setIsSuccess(!isSuccess)}>Toggle</button>
+      <Toast isSuccess={isSuccess} />
     </div>
   );
 }

@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 module.exports = {
   entry: {
     popup: "./src/popup/index.js",
-    options: "./src/options/index.js",
+    archive: "./src/archive/index.js",
   },
   output: {
     path: path.resolve(__dirname, "extension/dist"),

@@ -4,9 +4,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 function Popup() {
-  return (
-    <div className="Popup"></div>
-  );
+  return null;
 }
 
 ReactDOM.render(<Popup />, document.getElementById("root"));

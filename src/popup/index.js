@@ -1,14 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import HelpSection from "./components/HelpSection";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-function Popup() {
-  return (
-    <div className="Popup">
-      <HelpSection onClick={console.log} />
-    </div>
-  );
-}
+import Popup from './Popup';
 
-ReactDOM.render(<Popup />, document.getElementById("root"));
+ReactDOM.render(<Popup />, document.getElementById('root'));

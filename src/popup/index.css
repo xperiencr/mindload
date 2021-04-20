@@ -1,4 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .Popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 320px;
   width: 480px;
+  position: relative;
+}
+
+.Main {
+
+}
+
+.Navigation {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }

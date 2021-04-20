@@ -1,15 +1,15 @@
 .KeyboardShortCut {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .KeyboardShortCut__key {
-  margin: 5px;
+  margin: 0.5rem;
   border: 1px solid black;
-  padding: .5rem;
-  border-radius: 4px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
   font-family: monospace;
 }
 
@@ -17,6 +17,5 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
 }

@@ -1,11 +1,10 @@
 import React from "react";
-import CloseIcon from "./images/close_black_24dp.svg";
+import CloseIcon from "./images/close.svg";
 import "./HelpSection.css";
-import './KeyboardShortcut.css';
+import "./KeyboardShortcut.css";
 import KeyboardShortcut from "./KeyboardShortcut";
 
 export default function HelpSection(props) {
-
   return (
     <div className="HelpSection">
       <img

@@ -8,7 +8,7 @@ import './index.css';
 function Popup() {
   return (
     <div className="Popup">
-      <HelpSection isOpen />
+      <HelpSection onClick />
     </div>
   );
 }

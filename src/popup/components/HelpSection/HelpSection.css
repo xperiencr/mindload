@@ -1,0 +1,10 @@
+.HelpSection {
+  position: relative;
+  top: 3rem;
+}
+
+.HelpSection__close {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+}

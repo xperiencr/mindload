@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
 import HelpSection from './components/HelpSection';
 
@@ -13,4 +13,4 @@ function Popup() {
   );
 }
 
-ReactDOM.render(<Popup />, document.getElementById('root'));
+ReactDOM.render(<Popup />, document.getElementById("root"));

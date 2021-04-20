@@ -1,0 +1,22 @@
+.Main__input {
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  height: 54px;
+  margin-right: 1rem;
+}
+
+.Main__submit {
+  background-color: white;
+  border-radius: 50%;
+  height: 54px;
+  width: 54px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.Main__submit-icon {
+  margin-right: -0.25rem;
+  margin-top: -0.125rem;
+}

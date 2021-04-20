@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import './Main.css';
+
 import sendIcon from './assets/send.svg';
 
 function Main({ onCreateNote }) {
@@ -23,7 +25,7 @@ function Main({ onCreateNote }) {
           value={noteContent}
         />
         <button className="Main__submit" type="submit">
-          <img src={sendIcon} alt="Send" />
+          <img className="Main__submit-icon" src={sendIcon} alt="Send" />
         </button>
       </form>
     </div>

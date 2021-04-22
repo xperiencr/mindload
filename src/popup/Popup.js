@@ -11,7 +11,20 @@ export default function Popup() {
         content="Lorem ipsum dolor sit amet"
         onDiscard={() => console.log('Descartar')}
         onSave={() => console.log('Guardar')}
+        urgent={false}
       />
+      <QueueNote
+        content="Lorem ipsum dolor sit amet"
+        onDiscard={() => console.log('Descartar')}
+        onSave={() => console.log('Guardar')}
+        urgent={true}
+      />
+      <QueueNote
+        content="Lorem ipsum dolor sit amet"
+        onDiscard={() => console.log('Descartar')}
+        onSave={() => console.log('Guardar')}
+        urgent={false}
+      />  
     </div>
   );
 }

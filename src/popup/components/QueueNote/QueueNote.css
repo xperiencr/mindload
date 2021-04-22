@@ -1,0 +1,73 @@
+.QueueNote {
+  background: #ffffff;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 1.75rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+
+.QueueNote__DoneIcon {
+  background-color: white;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  border: 1px solid black;
+  position: absolute;
+  bottom: -1rem;
+  left: 11rem;
+}
+
+.QueueNote__CloseIcon {
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  bottom: -1rem;
+  right: 11rem;
+}
+
+.QueueNoteUrgent {
+  background: #ffefef;
+  margin: 1rem;
+  border: 1px solid #ff7878;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 1.75rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+
+.QueueNote__DoneIconUrgent {
+  background-color: white;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  border: 1px solid #ff7878;
+  position: absolute;
+  bottom: -1rem;
+  left: 11rem;
+}
+
+.QueueNote__CloseIconUrgent {
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #ff7878;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  bottom: -1rem;
+  right: 11rem;
+}

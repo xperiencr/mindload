@@ -18,18 +18,18 @@ function QueueNote({ onSave, onDiscard, content, urgent }) {
       onMouseOver={() => changeState(true)}
       onMouseLeave={() => changeState(false)}
     >
-      {content}
+      {<p className="QueueNote__content">{content}</p>}
       {isMouseOver ? (
         <div>
-          <button className={urgent ? "QueueNote__DoneIconUrgent" : "QueueNote__DoneIcon"} onClick={onSave}>
+          <button className={urgent ? "QueueNote__done--urgent" : "QueueNote__done"} onClick={onSave}>
             <img src={urgent? DoneIconUrgent : DoneIcon} alt="Done"></img>
           </button>
-          <button className={urgent ? "QueueNote__CloseIconUrgent" : "QueueNote__CloseIcon"} onClick={onDiscard}>
+          <button className={urgent ? "QueueNote__close--urgent" : "QueueNote__close"} onClick={onDiscard}>
             <img src={urgent ? CloseIconUrgent : CloseIcon} alt="Close"></img>
           </button>
         </div>
       ) : (
-        ''
+        null
       )}
     </div>
   );

@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.QueueNote__DoneIcon {
+.QueueNote__done {
   background-color: white;
   border-radius: 50%;
   height: 2.5rem;
@@ -23,7 +23,7 @@
   left: 11rem;
 }
 
-.QueueNote__CloseIcon {
+.QueueNote__close {
   background-color: white;
   cursor: pointer;
   border: 1px solid black;
@@ -48,7 +48,7 @@
   position: relative;
 }
 
-.QueueNote__DoneIconUrgent {
+.QueueNote__done--urgent {
   background-color: white;
   border-radius: 50%;
   height: 2.5rem;
@@ -60,7 +60,7 @@
   left: 11rem;
 }
 
-.QueueNote__CloseIconUrgent {
+.QueueNote__close--urgent {
   background-color: white;
   cursor: pointer;
   border: 1px solid #ff7878;

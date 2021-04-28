@@ -9,6 +9,7 @@ function Popup() {
   return (
     <div className="Popup">
       <Note content="Esto es una nota" isUrgent={false} onRemove={alert} />
+      <Note content="Esto es una nota urgente" isUrgent={true} onRemove={alert} />
     </div>
   );
 }

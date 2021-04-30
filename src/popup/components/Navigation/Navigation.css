@@ -1,0 +1,11 @@
+.Navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.Navigation__link {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}

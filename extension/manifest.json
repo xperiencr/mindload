@@ -13,8 +13,5 @@
     },
     "default_popup": "popup.html",
     "default_title": "Mindload"
-  },
-  "options_ui": {
-    "page": "options.html"
   }
 }

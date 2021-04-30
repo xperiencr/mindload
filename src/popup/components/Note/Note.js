@@ -7,7 +7,7 @@ function Note({ content, isUrgent, onRemove }) {
   const [isHidden, setHidden] = useState(true);
 
   const botonDeCerrar = (
-    <button>
+    <button onClick={onRemove}>
       <img src={closeIcon} />
     </button>
   );

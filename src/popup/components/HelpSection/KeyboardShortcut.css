@@ -1,0 +1,21 @@
+.KeyboardShortCut {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.KeyboardShortCut__key {
+  margin: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+}
+
+.KeyboardShortCut__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}

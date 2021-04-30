@@ -1,17 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Note from "./components/Note";
+import { Queue } from 'state';
+import Popup from './Popup';
 
-import "./index.css";
-
-function Popup() {
-  return (
-    <div className="Popup">
-      <Note content="Esto es una nota" isUrgent={false} onRemove={alert} />
-      <Note content="Esto es una nota urgente" isUrgent={true} onRemove={alert} />
-    </div>
-  );
-}
-
-ReactDOM.render(<Popup />, document.getElementById("root"));
+ReactDOM.render(
+  <Queue.Provider>
+    <Popup />
+  </Queue.Provider>,
+  document.getElementById('root')
+);

@@ -1,14 +1,19 @@
-const path = require("path");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    popup: "./src/popup/index.js",
-    options: "./src/options/index.js",
+    popup: './src/popup/index.js',
+    archive: './src/archive/index.js',
   },
   output: {
-    path: path.resolve(__dirname, "extension/dist"),
-    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, 'extension/dist'),
+    filename: '[name].bundle.js',
+  },
+  resolve: {
+    alias: {
+      'state': path.resolve(__dirname, 'src/state'),
+    },
   },
   module: {
     rules: [
@@ -16,26 +21,26 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
         },
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           {
-            loader: "file-loader",
+            loader: 'file-loader',
             options: {
-              publicPath: "../../dist",
+              publicPath: '../../dist',
             },
           },
         ],
       },
     ],
   },
-  devtool: "source-map",
-  plugins: [new CleanWebpackPlugin(["dist"])],
+  devtool: 'source-map',
+  plugins: [new CleanWebpackPlugin(['dist'])],
 };

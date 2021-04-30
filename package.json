@@ -4,7 +4,8 @@
     "build": "webpack --mode=development",
     "release": "webpack --mode=development && web-ext build --source-dir extension --config web-ext-config.js",
     "browser": "web-ext run --browser-console --source-dir extension",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

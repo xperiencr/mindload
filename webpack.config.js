@@ -12,7 +12,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'state': path.resolve(__dirname, 'src/state'),
+      services: path.resolve(__dirname, 'src/services'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   module: {

@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Queue } from 'state';
+import { State } from 'services';
 import Popup from './Popup';
 
 ReactDOM.render(
-  <Queue.Context>
-    <Popup />
-  </Queue.Context>,
-  document.getElementById('root')
+  <State.Archive>
+    <State.Queue>
+      <Popup />
+    </State.Queue>
+  </State.Archive>,
+  document.getElementById('root'),
 );

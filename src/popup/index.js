@@ -5,8 +5,8 @@ import { Queue } from 'state';
 import Popup from './Popup';
 
 ReactDOM.render(
-  <Queue.Context>
+  <Queue.Provider>
     <Popup />
-  </Queue.Context>,
+  </Queue.Provider>,
   document.getElementById('root')
 );

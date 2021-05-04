@@ -16,6 +16,21 @@ export default function Popup() {
       content: 'Lorem ipsum dolor sit amet',
       isUrgent: true,
     },
+    {
+      id: 'ghijklasa',
+      content: 'Lorem ipsum dolor sit amet',
+      isUrgent: false,
+    },
+    {
+      id: 'ghijksdfgl',
+      content: 'Lorem ipsum dolor sit amet',
+      isUrgent: true,
+    },
+    {
+      id: 'ghijkwedgfdwdl',
+      content: 'Lorem ipsum dolor sit amet',
+      isUrgent: false,
+    },
   ];
 
   return (
@@ -23,7 +38,7 @@ export default function Popup() {
       <Queue
         notes={noteList}
         onAdd={(newNote) => console.log(`add: ${newNote.content.slice(0, 10)}`)}
-        onRemove={id => console.log(`remove: ${id}`)}
+        onRemove={(id) => console.log(`remove: ${id}`)}
         onClose={() => console.log('close')}
       />
     </div>

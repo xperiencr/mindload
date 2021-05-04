@@ -1,0 +1,19 @@
+.Queue {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Queue__list {
+  margin: 20px 0;
+  overflow-y: auto;
+}
+
+.Queue__expanLess {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}

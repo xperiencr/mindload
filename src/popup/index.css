@@ -1,4 +1,5 @@
 .Popup {
   height: 320px;
   width: 480px;
+  position: relative;
 }

@@ -2,6 +2,20 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
+}
+
+.Queue__close {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 1000;
+  padding: 1.5rem 0;
 }
 
 .Queue__list {

@@ -9,14 +9,7 @@ import './Queue.css';
 import QueueNote from '../QueueNote';
 
 function Queue({ notes, onAdd, onRemove, onClose }) {
-  // { id: string, note: QueueNote }
-  const [NewNote, setNewNote] = useState([]);
-
-  const setNewNote = {
-    id: nanoid(),
-    note: QueueNote,
-  };
-
+  
   const noteL = notes.map((note) => (
     <QueueNote
       content={note.content}

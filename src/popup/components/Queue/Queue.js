@@ -8,7 +8,7 @@ import './Queue.css';
 import QueueNote from '../QueueNote';
 
 function Queue({ notes, onAdd, onRemove, onClose }) {
-  const noteL = notes.map(({ id, content, isUrgent }) => (
+  const noteList = notes.map(({ id, content, isUrgent }) => (
     <QueueNote
       content={content}
       urgent={isUrgent}
@@ -27,11 +27,11 @@ function Queue({ notes, onAdd, onRemove, onClose }) {
   return (
     <div className="Queue">
       <div className="Queue__close">
-        <button type="button" className="Queue__expanLess" onClick={onClose}>
+        <button type="button" className="Queue__expand--less" onClick={onClose}>
           <img src={expandLess} alt="expandLess" />
         </button>
       </div>
-      <div className="Queue__list">{noteL}</div>
+      <div className="Queue__list">{noteList}</div>
     </div>
   );
 }

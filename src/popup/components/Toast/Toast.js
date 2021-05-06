@@ -6,7 +6,7 @@ import './Toast.css';
 
  
 function Toast(props) {
-  return <div>Saved Succesfully </div>;
+  return <div className="Toast">Saved succesfully </div>;
 
 }
 

@@ -1,7 +1,16 @@
 .Toast{
-  width: 230px;
-  height: 49px;
-  Top: 235px;
-  left: 214;
-  border-radius: 4px; 
+  /*text-align: center;*/
+  background-color: #555555;
+  border-radius: 4px;
+  padding: 1rem 2.7rem;
+  display: inline-block;
+
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 20px;
+
+  color: #ffffff;
 }

@@ -21,6 +21,7 @@
   position: absolute;
   bottom: -1rem;
   left: 11rem;
+  display: flex;
 }
 
 .QueueNote__close {
@@ -33,6 +34,7 @@
   position: absolute;
   bottom: -1rem;
   right: 11rem;
+  display: flex;
 }
 
 .QueueNoteUrgent {
@@ -58,6 +60,7 @@
   position: absolute;
   bottom: -1rem;
   left: 11rem;
+  display: flex;
 }
 
 .QueueNote__close--urgent {
@@ -70,4 +73,13 @@
   position: absolute;
   bottom: -1rem;
   right: 11rem;
+  display: flex;
+}
+
+.QueueNote__done--urgent--icon,
+.QueueNote__done--icon,
+.QueueNote__close--urgent--icon,
+.QueueNote__close--icon {
+  justify-content: center;
+  align-items: center;
 }

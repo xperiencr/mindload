@@ -1,10 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import "./index.css";
+import './index.css';
 
-function Options() {
+function Archive() {
   return null;
 }
 
-ReactDOM.render(<Options />, document.getElementById("root"));
+ReactDOM.render(<Archive />, document.getElementById('root'));

@@ -8,5 +8,5 @@ ReactDOM.render(
   <Queue.Provider>
     <Popup />
   </Queue.Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

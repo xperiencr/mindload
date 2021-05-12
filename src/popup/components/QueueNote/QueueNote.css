@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.QueueNote__done {
+.QueueNote__save {
   background-color: white;
   border-radius: 50%;
   height: 2.5rem;
@@ -50,7 +50,7 @@
   position: relative;
 }
 
-.QueueNote__done--urgent {
+.QueueNote__save--urgent {
   background-color: white;
   border-radius: 50%;
   height: 2.5rem;
@@ -76,10 +76,10 @@
   display: flex;
 }
 
-.QueueNote__done--urgent--icon,
-.QueueNote__done--icon,
-.QueueNote__close--urgent--icon,
-.QueueNote__close--icon {
+.QueueNote__save-icon--urgent,
+.QueueNote__save-icon,
+.QueueNote__close-icon--urgent,
+.QueueNote__close-icon {
   justify-content: center;
   align-items: center;
 }

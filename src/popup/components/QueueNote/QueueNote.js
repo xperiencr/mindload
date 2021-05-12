@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 
 import CloseIcon from './icons/close.svg';
-import DoneIcon from './icons/done.svg';
+import SaveIcon from './icons/save.svg';
 import CloseIconUrgent from './icons/closeUrgent.svg';
-import DoneIconUrgent from './icons/doneUrgent.svg';
+import SaveIconUrgent from './icons/saveUrgent.svg';
 
 import './QueueNote.css';
 
@@ -22,12 +22,12 @@ function QueueNote({ onSave, onDiscard, content, isUrgent }) {
       {isMouseOver ? (
         <div>
           <button
-            className={isUrgent ? 'QueueNote__done--urgent' : 'QueueNote__done'}
+            className={isUrgent ? 'QueueNote__save--urgent' : 'QueueNote__save'}
             onClick={onSave}
           >
             <img
-              className={isUrgent ? 'QueueNote__done--urgent--icon' : 'QueueNote__done--icon'}
-              src={isUrgent ? DoneIconUrgent : DoneIcon}
+              className={isUrgent ? 'QueueNote__save-icon--urgent' : 'QueueNote__save-icon'}
+              src={isUrgent ? SaveIconUrgent : SaveIcon}
               alt="Done"
             ></img>
           </button>
@@ -36,7 +36,7 @@ function QueueNote({ onSave, onDiscard, content, isUrgent }) {
             onClick={onDiscard}
           >
             <img
-              className={isUrgent ? 'QueueNote__close--urgent--icon' : 'QueueNote__close--icon'}
+              className={isUrgent ? 'QueueNote__close-icon--urgent' : 'QueueNote__close-icon'}
               src={isUrgent ? CloseIconUrgent : CloseIcon}
               alt="Close"
             ></img>

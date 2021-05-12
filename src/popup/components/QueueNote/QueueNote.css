@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.QueueNote__done {
+.QueueNote__save {
   background-color: white;
   border-radius: 50%;
   height: 2.5rem;
@@ -21,6 +21,7 @@
   position: absolute;
   bottom: -1rem;
   left: 11rem;
+  display: flex;
 }
 
 .QueueNote__close {
@@ -33,6 +34,7 @@
   position: absolute;
   bottom: -1rem;
   right: 11rem;
+  display: flex;
 }
 
 .QueueNoteUrgent {
@@ -48,7 +50,7 @@
   position: relative;
 }
 
-.QueueNote__done--urgent {
+.QueueNote__save--urgent {
   background-color: white;
   border-radius: 50%;
   height: 2.5rem;
@@ -58,6 +60,7 @@
   position: absolute;
   bottom: -1rem;
   left: 11rem;
+  display: flex;
 }
 
 .QueueNote__close--urgent {
@@ -70,4 +73,13 @@
   position: absolute;
   bottom: -1rem;
   right: 11rem;
+  display: flex;
+}
+
+.QueueNote__save-icon--urgent,
+.QueueNote__save-icon,
+.QueueNote__close-icon--urgent,
+.QueueNote__close-icon {
+  justify-content: center;
+  align-items: center;
 }

@@ -27,7 +27,7 @@ function Queue({ notes, onAdd, onRemove, onClose }) {
   return (
     <div className="Queue">
       <div className="Queue__close">
-        <button type="button" className="Queue__expand--less" onClick={onClose}>
+        <button type="button" className="Queue__expandLess" onClick={onClose}>
           <img src={expandLess} alt="expandLess" />
         </button>
       </div>

@@ -23,7 +23,7 @@
   overflow-y: auto;
 }
 
-.Queue__expand--less {
+.Queue__expandLess {
   position: -webkit-sticky;
   position: sticky;
   top: 0;

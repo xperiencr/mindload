@@ -17,4 +17,5 @@ Provider.defaultProps = {
   children: null,
 };
 
-export default { Provider, Context };
+export { Provider };
+export default Context;

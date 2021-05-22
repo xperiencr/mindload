@@ -1,22 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Main, Navigation } from './components';
+import { Main, Navigation, HelpSection, Queue } from './components';
 
 import './index.css';
 
-export default function Popup() {
-  return (
-    <div className="Popup">
-      <Main
-        onCreateNote={(newNote) => {
-          console.log('Note to be created: ');
-          console.log(newNote);
-        }}
-      />
+export default function Popup({ createNote, openArchive }) {
+  const [isHelpSection, setIsHelpSection] = useState(false);
+  const [isQueue, setIsQueue] = useState(false);
+
+  const baseContent = (
+    <>
+      <Main onCreateNote={createNote} />
       <Navigation
-        goHome={() => console.log('Went home')}
-        openHelp={() => console.log('Opened help')}
+        goHome={openArchive}
+        openHelp={() => setIsHelpSection(true)}
+        openQueue={() => setIsQueue(true)}
       />
-    </div>
+    </>
   );
+  let content = null;
+  if (isHelpSection) content = <HelpSection onClose={() => setIsHelpSection(false)} />;
+  else if (isQueue) content = <Queue onClose={() => setIsQueue(false)} notes={[]} />;
+  else content = baseContent;
+
+  return <div className="Popup">{content}</div>;
 }

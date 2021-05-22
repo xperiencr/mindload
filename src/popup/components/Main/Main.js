@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { nanoid } from 'nanoid';
 
 import './Main.css';
 
@@ -13,7 +14,8 @@ function Main({ onCreateNote }) {
       <form
         onSubmit={(event) => {
           event.preventDefault();
-          onCreateNote({ content: noteContent });
+          onCreateNote({ id: nanoid(), content: noteContent, isUrgent: false });
+          setNoteContent('');
         }}
         className="Main__form"
       >

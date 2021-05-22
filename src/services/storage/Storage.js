@@ -24,7 +24,6 @@ export default class Storage {
 
   static async saveArchiveNote(newNote) {
     const { archiveNotes: currentNotes } = await browser.storage.local.get({ archiveNotes: [] });
-    console.log(currentNotes)
     const newNotes = [...currentNotes, newNote];
     await browser.storage.local.set({ archiveNotes: newNotes });
   }

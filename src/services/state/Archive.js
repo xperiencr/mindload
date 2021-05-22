@@ -1,11 +1,27 @@
-import React, { createContext } from 'react';
+import React, { useEffect, useState, createContext } from 'react';
 import PropTypes from 'prop-types';
+
+import { Storage } from 'services';
 
 const Context = createContext(null);
 
 function Provider({ children }) {
-  const state = {};
-  const actions = {};
+  const [notes, setNotes] = useState([]);
+
+  useEffect(() => {
+    Storage.getArchiveNotes().then(setNotes);
+    Storage.addListener((changes) => {
+      if ('archiveNotes' in changes) setNotes(changes.archiveNotes.newValue);
+    });
+  }, []);
+
+  const state = {
+    notes,
+  };
+  const actions = {
+    addNote: Storage.saveArchiveNote,
+    removeNote: Storage.deleteArchiveNote,
+  };
   return <Context.Provider value={[state, actions]}>{children}</Context.Provider>;
 }
 
@@ -17,5 +33,4 @@ Provider.defaultProps = {
   children: null,
 };
 
-export { Context };
-export default Provider;
+export default { Provider, Context };

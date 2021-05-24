@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { State } from 'services';
-import Popup from './Popup';
+import Popup from './Popup.container';
 
 ReactDOM.render(
-  <State.Archive>
-    <State.Queue>
+  <State.Archive.Provider>
+    <State.Queue.Provider>
       <Popup />
-    </State.Queue>
-  </State.Archive>,
+    </State.Queue.Provider>
+  </State.Archive.Provider>,
   document.getElementById('root'),
 );

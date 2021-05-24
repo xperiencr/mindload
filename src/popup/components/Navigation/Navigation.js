@@ -8,13 +8,13 @@ import expandMoreIcon from './assets/expandMore.svg';
 import expandLessIcon from './assets/expandLess.svg';
 import helpIcon from './assets/help.svg';
 
-function Navigation({ className, goHome, openHelp }) {
+function Navigation({ className, goHome, openHelp, openQueue }) {
   return (
     <nav className={`${className} Navigation`}>
       <button onClick={goHome} type="button" className="Navigation__link Navigation__home">
         <img src={homeIcon} alt="Home" />
       </button>
-      <button onClick={() => {}} type="button" className="Navigation__link Navigation__expand-queue">
+      <button onClick={openQueue} type="button" className="Navigation__link Navigation__expand-queue">
         <img src={expandMoreIcon || expandLessIcon} alt="Expand" />
       </button>
       <button onClick={openHelp} type="button" className="Navigation__link Navigation__help">
@@ -28,6 +28,7 @@ Navigation.propTypes = {
   className: PropTypes.string,
   goHome: PropTypes.func.isRequired,
   openHelp: PropTypes.func.isRequired,
+  openQueue: PropTypes.func.isRequired,
 };
 
 Navigation.defaultProps = {

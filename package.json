@@ -38,7 +38,8 @@
     "nanoid": "^3.1.22",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "react-responsive-masonry": "^2.1.2"
   },
   "jest": {
     "transform": {

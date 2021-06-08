@@ -1,9 +1,5 @@
-.HelpSection {
-  position: relative;
-  top: 3rem;
-}
-
 .HelpSection__close {
+  cursor: pointer;
   position: absolute;
   left: 2rem;
   right: 2rem;

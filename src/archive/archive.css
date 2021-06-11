@@ -1,0 +1,12 @@
+.Archive {
+  height: 100vh;
+  min-width: 806px;
+  padding: 2rem;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+
+.Archive__title {
+  text-align: center;
+}

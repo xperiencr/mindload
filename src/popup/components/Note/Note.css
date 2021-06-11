@@ -1,14 +1,13 @@
 .Note {
   width: 15rem;
   margin: 0rem;
+  padding: 0 1rem;
   border-radius: 0.25rem;
   border: 1px solid #000000;
   background-color: white;
+  position: relative;
 }
 .Note--urgent {
-  width: 15rem;
-  margin: 0rem;
-  border-radius: 0.25rem;
   border: 1px solid #ff7878;
   background-color: #ffefef;
 }
@@ -26,4 +25,5 @@
   position: absolute;
   top: -1rem;
   right: -1rem;
+  z-index: 1000;
 }

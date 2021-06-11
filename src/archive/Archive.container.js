@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 
-import { State } from 'services';
+import { State, Storage } from 'services';
 import Archive from './Archive';
 
 function ArchiveContainer() {
-  const [{ notes }, actions] = useContext(State.Archive.Context);
-  return <Archive notes={notes} removeNote={actions.removeNote} />;
+  const { notes } = useContext(State.Archive.Context);
+  return <Archive notes={notes} removeNote={Storage.deleteArchiveNote} />;
 }
 
 export default ArchiveContainer;

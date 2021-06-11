@@ -18,11 +18,8 @@ function Provider({ children }) {
   const state = {
     notes,
   };
-  const actions = {
-    addNote: Storage.saveArchiveNote,
-    removeNote: Storage.deleteArchiveNote,
-  };
-  return <Context.Provider value={[state, actions]}>{children}</Context.Provider>;
+
+  return <Context.Provider value={state}>{children}</Context.Provider>;
 }
 
 Provider.propTypes = {

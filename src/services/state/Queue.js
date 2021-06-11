@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext } from 'react';
 import PropTypes from 'prop-types';
 
-import { Storage } from 'services';
+import Storage from '../storage';
 
 const Context = createContext(null);
 
@@ -18,11 +18,8 @@ function Provider({ children }) {
   const state = {
     notes,
   };
-  const actions = {
-    addNote: Storage.saveQueueNote,
-    removeNote: Storage.deleteQueueNote,
-  };
-  return <Context.Provider value={[state, actions]}>{children}</Context.Provider>;
+
+  return <Context.Provider value={state}>{children}</Context.Provider>;
 }
 
 Provider.propTypes = {

@@ -11,7 +11,7 @@ function Queue({ notes, onAdd, onRemove, onClose }) {
   const noteList = notes.map(({ id, content, isUrgent }) => (
     <QueueNote
       content={content}
-      urgent={isUrgent}
+      isUrgent={isUrgent}
       onSave={() => onAdd({ id, content, isUrgent })}
       onDiscard={() => onRemove(id)}
     />

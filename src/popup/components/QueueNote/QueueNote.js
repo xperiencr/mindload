@@ -10,16 +10,16 @@ import SaveIconUrgent from './icons/saveUrgent.svg';
 import './QueueNote.css';
 
 function QueueNote({ onSave, onDiscard, content, isUrgent }) {
-  const [isMouseOver, changeState] = useState(false);
+  const [isMouseOver, setIsMouseOver] = useState(false);
 
   return (
     <div
       className={isUrgent ? 'QueueNoteUrgent' : 'QueueNote'}
-      onMouseOver={() => changeState(true)}
-      onMouseLeave={() => changeState(false)}
+      onMouseOver={() => setIsMouseOver(true)}
+      onMouseLeave={() => setIsMouseOver(false)}
     >
-      {<p className="QueueNote__content">{content}</p>}
-      {isMouseOver ? (
+      <p className="QueueNote__content">{content}</p>
+      {isMouseOver && (
         <div>
           <button
             className={isUrgent ? 'QueueNote__save--urgent' : 'QueueNote__save'}
@@ -42,7 +42,7 @@ function QueueNote({ onSave, onDiscard, content, isUrgent }) {
             ></img>
           </button>
         </div>
-      ) : null}
+      )}
     </div>
   );
 }

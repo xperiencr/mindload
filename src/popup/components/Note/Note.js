@@ -2,13 +2,18 @@ import React, { useState } from 'react';
 import './Note.css';
 import PropTypes from 'prop-types';
 import closeIcon from './close.svg';
+import closeIconRed from './close--red.svg';
 
 function Note({ id, content, isUrgent, onRemove }) {
   const [isHidden, setHidden] = useState(true);
 
   const botonDeCerrar = (
-    <button type="button" className="Note__close" onClick={() => onRemove(id)}>
-      <img src={closeIcon} alt="Close" />
+    <button
+      type="button"
+      className={`Note__close ${isUrgent ? 'Note__close--is-urgent' : ''}`}
+      onClick={() => onRemove(id)}
+    >
+      <img src={isUrgent ? closeIconRed : closeIcon} alt="Close" />
     </button>
   );
 

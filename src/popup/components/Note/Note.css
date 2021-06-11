@@ -27,3 +27,7 @@
   right: -1rem;
   z-index: 1000;
 }
+
+.Note__close--is-urgent {
+  border: 1px solid #ff7878;
+}

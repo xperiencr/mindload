@@ -14,7 +14,11 @@ function Main({ onCreateNote }) {
       <form
         onSubmit={(event) => {
           event.preventDefault();
-          onCreateNote({ id: nanoid(), content: noteContent, isUrgent: false });
+          onCreateNote({
+            id: nanoid(),
+            content: noteContent,
+            isUrgent: noteContent.includes('#urgent'),
+          });
           setNoteContent('');
         }}
         className="Main__form"

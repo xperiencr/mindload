@@ -7195,6 +7195,11 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-responsive-masonry@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-responsive-masonry/-/react-responsive-masonry-2.1.2.tgz#fdf0e71c1601bde73a32a5ae68b6c1b85250f87d"
+  integrity sha512-Vd5XWx077VGL+Pnv4dxVA4rBl4Y5Y6snLqm29QFqHnEE8GNJtqUW96F6SgIcgWJoxfJC52Ifi5Oixz1PdeEpOA==
+
 react-test-renderer@^16.14.0:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.14.0.tgz#e98360087348e260c56d4fe2315e970480c228ae"

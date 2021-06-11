@@ -11,15 +11,8 @@ function Queue({ notes, onAdd, onRemove, onClose }) {
   const noteList = notes.map(({ id, content, isUrgent }) => (
     <QueueNote
       content={content}
-      urgent={isUrgent}
-      onSave={() => {
-        const newNote = {
-          id: nanoid(),
-          content,
-          isUrgent,
-        };
-        onAdd(newNote);
-      }}
+      isUrgent={isUrgent}
+      onSave={() => onAdd({ id, content, isUrgent })}
       onDiscard={() => onRemove(id)}
     />
   ));
@@ -42,7 +35,7 @@ Queue.propTypes = {
       id: PropTypes.string.isRequired,
       content: PropTypes.string.isRequired,
       isUrgent: PropTypes.bool.isRequired,
-    })
+    }),
   ).isRequired,
   onAdd: PropTypes.func.isRequired,
   onRemove: PropTypes.func.isRequired,

@@ -13,5 +13,13 @@
     },
     "default_popup": "popup.html",
     "default_title": "Mindload"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Period",
+        "mac": "Command+Period"
+      }
+    }
   }
 }

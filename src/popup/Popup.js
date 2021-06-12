@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Hotkeys from 'react-hot-keys';
 
 import { Main, Navigation, HelpSection, Queue } from './components';
 
@@ -41,7 +42,17 @@ export default function Popup({
   else if (isQueue) content = queueContent;
   else content = baseContent;
 
-  return <div className="Popup">{content}</div>;
+  return (
+    <Hotkeys
+      keyName="ctrl+e,ctrl+h"
+      onKeyDown={(key) => {
+        if (key === 'ctrl+e') setIsQueue(true);
+        else setIsQueue(false);
+      }}
+    >
+      <div className="Popup">{content}</div>
+    </Hotkeys>
+  );
 }
 
 Popup.propTypes = {

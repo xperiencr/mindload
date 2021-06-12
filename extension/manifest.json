@@ -17,8 +17,8 @@
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "Ctrl+Period",
-        "mac": "Command+Period"
+        "default": "Ctrl+Comma",
+        "mac": "Command+Comma"
       }
     }
   }

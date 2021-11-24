@@ -11,7 +11,7 @@ export default function HelpSection({ onClose }) {
         <span className="HelpSection__title">Keyboard shorcuts</span>
       </div>
       <div className="HelpSection__content">
-        <KeyboardShortcut keys={['Ctrl', '[comma]']} description="Open input dialog" />
+        <KeyboardShortcut keys={['Ctrl', '[comma]']} description="Open dialog" />
         <KeyboardShortcut keys={['Ctrl', 'E']} description="Toggle queue" />
         <KeyboardShortcut keys={['Ctrl', 'Alt', 'A']} description="Go to archive" />
       </div>

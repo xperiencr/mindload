@@ -14,7 +14,7 @@ export default function Popup({
   queueNotes,
 }) {
   const [isHelpSection, setIsHelpSection] = useState(false);
-  const [isQueue, setIsQueue] = useState(false);
+  const [isQueue, setIsQueue] = useState(true);
 
   const baseContent = (
     <>
@@ -35,6 +35,7 @@ export default function Popup({
       }}
       onClose={() => setIsQueue(false)}
       notes={queueNotes}
+      hideQueue={() => setIsQueue(false)}
     />
   );
   let content = null;

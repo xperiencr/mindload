@@ -37,4 +37,13 @@
   display: block;
   text-align: center;
   user-select: none;
+  line-height: 1.5;
+}
+
+.Queue__go-add-note {
+  text-decoration: none;
+}
+
+.Queue__go-add-note:hover {
+  text-decoration: underline;
 }

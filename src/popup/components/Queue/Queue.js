@@ -6,7 +6,13 @@ import expandLess from './icons/expandLess.svg';
 import './Queue.css';
 import QueueNote from '../QueueNote';
 
-function Queue({ notes, onAdd, onRemove, onClose }) {
+function Queue({
+  notes,
+  onAdd,
+  onRemove,
+  onClose,
+  hideQueue,
+}) {
   const noteList = notes.map(({ id, content, isUrgent }) => (
     <QueueNote
       content={content}
@@ -17,7 +23,11 @@ function Queue({ notes, onAdd, onRemove, onClose }) {
   ));
 
   const emptyQueueLegend = (
-    <span className="Queue__empty-list-legend">Nothing around here</span>
+    <span className="Queue__empty-list-legend">
+      Your queue is empty.
+      <br />
+      <a onClick={hideQueue} href="#!" className="Queue__go-add-note">Add a note.</a>
+    </span>
   );
 
   return (
@@ -43,6 +53,7 @@ Queue.propTypes = {
   onAdd: PropTypes.func.isRequired,
   onRemove: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
+  hideQueue: PropTypes.func.isRequired,
 };
 
 export default Queue;

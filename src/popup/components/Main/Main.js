@@ -1,6 +1,5 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import Hotkeys from 'react-hot-keys';
 import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 

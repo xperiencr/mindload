@@ -44,10 +44,9 @@ export default function Popup({
 
   return (
     <Hotkeys
-      keyName="ctrl+e,ctrl+h"
+      keyName="ctrl+e"
       onKeyDown={(key) => {
-        if (key === 'ctrl+e') setIsQueue(true);
-        else setIsQueue(false);
+        if (key === 'ctrl+e') setIsQueue(!isQueue);
       }}
     >
       <div className="Popup">{content}</div>

@@ -6,7 +6,10 @@
   border-right: 2px solid black;
 }
 
-
 .Archive__title {
+  text-align: center;
+}
+
+.Archive__empty-list-legend{
   text-align: center;
 }

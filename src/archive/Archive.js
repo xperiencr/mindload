@@ -3,12 +3,16 @@ import PropTypes from 'prop-types';
 import Masonry from 'react-responsive-masonry';
 
 import { Note } from '@/popup/components';
-import './archive.css';
+import './Archive.css';
 
 function Archive({ notes, removeNote }) {
+  const emptyMessage = (
+    <div className="Archive__empty-list-legend">Nothing around here...</div>
+  );
   return (
     <div className="Archive">
       <h1 className="Archive__title">Saved notes</h1>
+      {!notes?.length && emptyMessage}
       <Masonry columnsCount={3} gutter="1rem">
         {notes
           .filter((note) => note.isUrgent)

@@ -1,7 +1,7 @@
 .Queue {
   display: flex;
   flex-direction: column;
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
   height: 100%;
   width: 100%;
 }
@@ -31,4 +31,10 @@
   border: none;
   background-color: white;
   cursor: pointer;
+}
+
+.Queue__empty-list-legend {
+  display: block;
+  text-align: center;
+  user-select: none;
 }

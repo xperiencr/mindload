@@ -1,10 +1,8 @@
-import React from "react";
-import "./KeyboardShortcut.css";
+import React from 'react';
+import './KeyboardShortcut.css';
 
 export default function KeyboardShortcut({ keys, description }) {
-  const keysElements = keys.map((key) => {
-    return <span className="KeyboardShortCut__key">{key}</span>;
-  });
+  const keysElements = keys.map((key) => <span className="KeyboardShortCut__key">{key}</span>);
 
   return (
     <div className="KeyboardShortCut">

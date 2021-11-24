@@ -1,6 +1,33 @@
-.HelpSection__close {
+.HelpSection {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.HelpSection__close-button {
   cursor: pointer;
   position: absolute;
   left: 2rem;
-  right: 2rem;
+  top: 2rem;
+}
+
+.HelpSection__title {
+  text-align: center;
+}
+
+.HelpSection__header {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.HelpSection__content {
+  margin-bottom: auto;
+  user-select: none;
 }

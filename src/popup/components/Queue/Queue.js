@@ -1,5 +1,4 @@
 import React from 'react';
-import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
 
 import expandLess from './icons/expandLess.svg';
@@ -17,6 +16,10 @@ function Queue({ notes, onAdd, onRemove, onClose }) {
     />
   ));
 
+  const emptyQueueLegend = (
+    <span className="Queue__empty-list-legend">Nothing around here</span>
+  );
+
   return (
     <div className="Queue">
       <div className="Queue__close">
@@ -24,7 +27,7 @@ function Queue({ notes, onAdd, onRemove, onClose }) {
           <img src={expandLess} alt="expandLess" />
         </button>
       </div>
-      <div className="Queue__list">{noteList}</div>
+      <div className="Queue__list">{noteList.length ? noteList : emptyQueueLegend}</div>
     </div>
   );
 }

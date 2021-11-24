@@ -45,9 +45,12 @@ export default function Popup({
 
   return (
     <Hotkeys
-      keyName="ctrl+e"
+      keyName="ctrl+e,shift+alt+d"
       onKeyDown={(key) => {
         if (key === 'ctrl+e') setIsQueue(!isQueue);
+        if (key === 'shift+alt+d' && isQueue) {
+          deleteNote(queueNotes[0].id);
+        }
       }}
     >
       <div className="Popup">{content}</div>

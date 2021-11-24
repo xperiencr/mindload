@@ -14,6 +14,7 @@ export default function HelpSection({ onClose }) {
         <KeyboardShortcut keys={['Ctrl', '[comma]']} description="Open dialog" />
         <KeyboardShortcut keys={['Ctrl', 'E']} description="Toggle queue" />
         <KeyboardShortcut keys={['Ctrl', 'Alt', 'A']} description="Go to archive" />
+        <KeyboardShortcut keys={['Shift', 'Alt', 'D']} description="Delete first note from queue" />
       </div>
     </div>
   );

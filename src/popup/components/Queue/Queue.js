@@ -13,7 +13,9 @@ function Queue({
   onClose,
   hideQueue,
 }) {
-  const noteList = notes.map(({ id, content, isUrgent }) => (
+  const urgentNotes = notes.filter((note) => note.isUrgent);
+  const nonUrgentNotes = notes.filter((note) => !note.isUrgent);
+  const noteList = [...urgentNotes, ...nonUrgentNotes].map(({ id, content, isUrgent }) => (
     <QueueNote
       content={content}
       isUrgent={isUrgent}

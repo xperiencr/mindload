@@ -6,7 +6,13 @@ import KeyboardShortcut from './KeyboardShortcut';
 export default function HelpSection({ onClose }) {
   return (
     <div className="HelpSection">
-      <img className="HelpSection__close-button" src={CloseIcon} alt="Close" title="Close" onClick={onClose} />
+      <img
+        className="HelpSection__close-button"
+        src={CloseIcon}
+        alt="Close"
+        title="Close"
+        onClick={onClose}
+      />
       <div className="HelpSection__header">
         <span className="HelpSection__title">Keyboard shorcuts</span>
       </div>
@@ -14,7 +20,9 @@ export default function HelpSection({ onClose }) {
         <KeyboardShortcut keys={['Ctrl', '[comma]']} description="Open dialog" />
         <KeyboardShortcut keys={['Ctrl', 'E']} description="Toggle queue" />
         <KeyboardShortcut keys={['Ctrl', 'Alt', 'A']} description="Go to archive" />
-        <KeyboardShortcut keys={['Shift', 'Alt', 'D']} description="Delete first note from queue" />
+        <KeyboardShortcut keys={['Alt', 'Shift', 'D']} description="Dismiss first note from queue" />
+        <KeyboardShortcut keys={['Alt', 'Shift', 'A']} description="Send first note to archive" />
+        <KeyboardShortcut keys={['Alt', 'Shift', 'G']} description="Send first note to bottom" />
       </div>
     </div>
   );

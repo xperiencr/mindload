@@ -22,6 +22,9 @@ function Main({ onCreateNote }) {
       <form
         onSubmit={(event) => {
           event.preventDefault();
+          if (noteContent.trim() === '') {
+            return;
+          }
           onCreateNote({
             id: nanoid(),
             content: noteContent,

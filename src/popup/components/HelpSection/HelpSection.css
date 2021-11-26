@@ -30,4 +30,6 @@
 .HelpSection__content {
   margin-bottom: auto;
   user-select: none;
+  max-height: 12rem;
+  overflow-y: auto;
 }

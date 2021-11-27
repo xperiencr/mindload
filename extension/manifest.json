@@ -21,5 +21,11 @@
         "mac": "Command+Comma"
       }
     }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{b6986168-d335-4312-b975-64553d0fc185}",
+      "strict_min_version": "70.0"
+    }
   }
 }

@@ -18,7 +18,7 @@ export default class Storage {
 
   static addListener(listener) {
     browser.storage.onChanged.addListener((changes, area) => {
-      if (area === 'local') listener(changes);
+      if (area === 'sync') listener(changes);
     });
   }
 
